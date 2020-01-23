@@ -11,9 +11,9 @@ RUN apt-get install -y wget subversion libapache2-svn libapache2-mod-encoding sq
 
 RUN \
         cd /usr/local/src && \
-        wget "https://github.com/usvn/usvn/archive/1.0.7.tar.gz" -O usvn-1.0.7.tar.gz && \
-        tar zxvf usvn-1.0.7.tar.gz && \
-        chown -R www-data:www-data /usr/local/src/usvn-1.0.7 && \
+        wget "https://github.com/usvn/usvn/archive/1.0.8.tar.gz" -O usvn-1.0.8.tar.gz && \
+        tar zxvf usvn-1.0.8.tar.gz && \
+        chown -R www-data:www-data /usr/local/src/usvn-1.0.8 && \
 	rm -rf /var/www/html
 
 RUN \
