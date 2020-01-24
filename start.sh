@@ -15,6 +15,7 @@ if [ ! -e "/var/lib/svn/files" ]; then
 	mkdir /var/lib/svn/files
 	chown www-data:www-data /var/lib/svn/files
 fi
+rm -rf ${usvn_src}/files
 ln -s /var/lib/svn/files ${usvn_src}/files
 
 if [ "x${USVN_SUBDIR}" = "x" ]; then
